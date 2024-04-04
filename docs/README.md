@@ -31,12 +31,12 @@
 - [Embedded OpenType (.eot)](fonts/watch.eot)
 - [Web Open Font Format (.wof)](fonts/watch.woff)
 
-# 
+# Guide
 <script>
   function onSet() {
     var inputElement = document.getElementById("time")
     var checkElement = document.getElementById("check")
-    checkElement.innerHTML = inputElement.value;
+    checkElement.innerHTML = typeof inputElement.value;
     return
   }
 </script>
