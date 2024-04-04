@@ -63,7 +63,7 @@
   }
 
   function setNow() {
-    const min = (new Date().getTime()/60000) % 720
+    const min = Math.floor(new Date().getTime()/60000) % 720
     console.log("min", min)
     const hex = ("000" + (min).toString(16)).slice(-3)
     const unicode = `&#xe${hex};`
