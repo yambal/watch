@@ -36,7 +36,6 @@
   function onSet() {
     var inputElement = document.getElementById("time")
     var checkElement = document.getElementById("check")
-    var resultElement = document.getElementById("result")
     if(inputElement && checkElement && inputElement.value){
       const [h, m] = inputElement.value.split(":")
       const min = (parseInt(h) * 60 + parseInt(m)) % 720
@@ -51,7 +50,6 @@
       = unicode: ${sampleUnicode} (Formed as Unicode)
       = html exsample : &lt;span class="watch"&gt;${sampleUnicode}&lt;/span&gt;
       = <span class="watch">${unicode}</span>`
-      resultElement.innerHTML = unicode
     }
     return
   }
@@ -59,7 +57,6 @@
 <input id="time" type="time">
 <button onclick="onSet()">set</button>
 <pre id="check"></pre>
-<div id="result" class="watch"></div>
 
 
 ## Licence
@@ -68,9 +65,10 @@
 <script>
   function setNow() {
     const min = (new Date().getTime()/60000) % 720
+    console.log("min", min)
     const hex = ("000" + (min).toString(16)).slice(-3)
     const unicode = `&#xe${hex};`
-    console.log(unicode)
+    console.log("unicode", unicode)
     const elements = document.getElementsByClassName("now-watch")
     const elementsArr = Array.from( elements )
     elementsArr.forEach((element) => {
@@ -79,4 +77,6 @@
   }
 
   setNow()
+  
+  const setInterval(setNow, 30000);
 </script>
