@@ -52,7 +52,16 @@ The font corresponding to each time is converted to hexadecimal minutes elapsed 
 | 11:59 (23:59) | 719 → 2cf | E2CF | ``&#xe2cf;`` | <span class="watch">&#xe2cf;</span> |
 
 ## Sample
-<p class="codepen" data-height="300" data-default-tab="html,result" data-slug-hash="oNOpVpV" data-user="june-yamamoto" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+### HTML & CSS
+<p class="codepen" data-height="300" data-default-tab="css,result" data-slug-hash="mdgpoZV" data-user="june-yamamoto" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
+  <span>See the Pen <a href="https://codepen.io/june-yamamoto/pen/mdgpoZV">
+  Untitled</a> by June YAMAMOTO (<a href="https://codepen.io/june-yamamoto">@june-yamamoto</a>)
+  on <a href="https://codepen.io">CodePen</a>.</span>
+</p>
+<script async src="https://cpwebassets.codepen.io/assets/embed/ei.js"></script>
+
+### JavaScript & CSS
+<p class="codepen" data-height="300" data-default-tab="css,result" data-slug-hash="oNOpVpV" data-user="june-yamamoto" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
   <span>See the Pen <a href="https://codepen.io/june-yamamoto/pen/oNOpVpV">
   Watch (font) Sample</a> by June YAMAMOTO (<a href="https://codepen.io/june-yamamoto">@june-yamamoto</a>)
   on <a href="https://codepen.io">CodePen</a>.</span>
