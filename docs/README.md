@@ -71,7 +71,8 @@
     const hex = ("000" + (min).toString(16)).slice(-3)
     const unicode = `&#xe${hex};`
     const elements = document.getElementsByClassName("now-watch")
-    elements.forEach((element) => {
+    const elementsArr = Array.from( elements )
+    elementsArr.forEach((element) => {
       element.innerHTML = unicode
     })
   }
