@@ -27,7 +27,7 @@
     font-size: 2rem;
   }
   </style>
-<div style="background-color: #6699FF; color: black; padding: 2rem; display: flex; align-items: center;">
+<div style="background-color: #6699FF; color: white; padding: 2rem; display: flex; align-items: center; border-radius: 1rem;">
   <div class="watch now-watch" style="font-size:12rem;">&#xe262;</div>
   <h1 style="margin: 0 1rem">Watch (font)</h1>
 </div>
