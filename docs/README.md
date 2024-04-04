@@ -27,7 +27,10 @@
     font-size: 2rem;
   }
   </style>
-# <span class="watch now-watch">&#xe262;</span> Watch (font)
+<div style="background-color: #6699FF; color: black; padding: 2rem; display: flex; align-items: center;">
+  <div class="watch now-watch" style="font-size:12rem;">&#xe262;</div>
+  <h1 style="margin: 0 1rem">Watch (font)</h1>
+</div>
 Analog clock icon font.
 It contains 720 minute icons for 12 hours (720 minutes) from 0:00 to 11:59, and 24 hours can be expressed by a single character.
 ## Download
@@ -36,7 +39,7 @@ It contains 720 minute icons for 12 hours (720 minutes) from 0:00 to 11:59, and 
 - [Web Open Font Format (.wof)](fonts/watch.woff)
 
 ## Icon Table
-The font corresponding to each time is converted to hexadecimal minutes elapsed since 0:00 (or 12:00) and assigned to ``&#xe000;`` to ``&#xe2cf;`` in the Private Use Area of Unicode
+The font corresponding to each time is converted to hexadecimal minutes elapsed since 0:00 (or 12:00) and assigned to ``&#xe000;``-``&#xe2cf;`` in the Private Use Area of Unicode
 
 | Time | min → hex | Unicode | HTML Entity | Icon |
 | --- | --- | --- | --- | --- |
@@ -53,7 +56,7 @@ The font corresponding to each time is converted to hexadecimal minutes elapsed 
 
 ## Sample
 ### HTML & CSS (Static)
-With this sample CSS, you can intuitively display a time-specified icon<br />10:00 = ``watch-0602``
+With this sample CSS, you can intuitively display a time-specified icon<br />10:00 = ``watch-1010``
 <p class="codepen" data-height="300" data-default-tab="css,result" data-slug-hash="mdgpoZV" data-user="june-yamamoto" style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;">
   <span>See the Pen <a href="https://codepen.io/june-yamamoto/pen/mdgpoZV">
   Untitled</a> by June YAMAMOTO (<a href="https://codepen.io/june-yamamoto">@june-yamamoto</a>)
