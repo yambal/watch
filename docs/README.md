@@ -39,8 +39,10 @@
     if(inputElement && checkElement && inputElement.value){
       const [h, m] = inputElement.value.split(":")
       const min = parseInt(h) * 60 + parseInt(m)
-      const hex = min.toString(16) 
-      checkElement.innerHTML = `h:${h}, m:${m} = ${hex}`
+      const hex = min.toString(16) % 720
+      const unicode = `&#xe${hex.PadLeft(3, '0')};`
+
+      checkElement.innerHTML = `h:${h}, m:${m} = ${hex} = ${unicode}`
     }
     return
   }
