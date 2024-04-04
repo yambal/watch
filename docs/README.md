@@ -35,6 +35,7 @@ It contains 720 minute icons for 12 hours (720 minutes) from 0:00 to 11:59, and 
 
 ## Icon Table
 The font corresponding to each time is converted to hexadecimal minutes elapsed since 0:00 (or 12:00) and assigned to ``&#xe000;`` to ``&#xe2cf;`` in the Private Use Area of Unicode
+
 | Time | min → hex | Unicode | HTML Entity | Icon |
 | --- | --- | --- | --- | --- |
 | 00:00 (12:00) | 0 → 0 | E000 | ``&#xe000;`` | <span class="watch">&#xe000;</span> |
