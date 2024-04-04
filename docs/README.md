@@ -25,7 +25,7 @@
     -moz-osx-font-smoothing: grayscale;
   }
   </style>
-# <span class="now-watch" id="title-watch">&#xe262;</span> Watch (font)
+# <span class="watch now-watch">&#xe262;</span> Watch (font)
 ## Download
 - [TrueType Font (.ttf)](fonts/watch.ttf)
 - [Embedded OpenType (.eot)](fonts/watch.eot)
@@ -49,7 +49,8 @@
       = ${min}min (minutes elapsed from 00:00 or 12:00)
       = hex: ${hex} (Converted to hexadecimal)
       = unicode: ${sampleUnicode} (Formed as Unicode)
-      = html exsample : <code><span class="watch">${unicode}</span><code>`
+      = html exsample : &lt;span class="watch"&gt;${sampleUnicode}&lt;/span&gt;
+      = <span class="watch">${unicode}</span>`
       resultElement.innerHTML = unicode
     }
     return
