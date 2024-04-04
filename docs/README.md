@@ -38,7 +38,7 @@
     var checkElement = document.getElementById("check")
     if(inputElement && checkElement && inputElement.value){
       const [h, m] = inputElement.value.split(":")
-      checkElement.innerHTML = `h:${}, m:${m}`
+      checkElement.innerHTML = `h:${h}, m:${m}`
     }
     return
   }
