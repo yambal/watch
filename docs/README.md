@@ -78,5 +78,5 @@
 
   setNow()
   
-  const setInterval(setNow, 30000);
+  setInterval(setNow, 30000);
 </script>
