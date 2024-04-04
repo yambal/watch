@@ -31,15 +31,14 @@
   <div class="watch now-watch" style="font-size:12rem;">&#xe262;</div>
   <h1 style="margin: 0 1rem">Watch (font)</h1>
 </div>
-Analog clock icon font.
-It contains 720 minute icons for 12 hours (720 minutes) from 0:00 to 11:59, and 24 hours can be expressed by a single character.
+This Analog Clock Icon Font includes 720 minute-specific icons covering the 12 hours from 0:00 to 11:59. Each icon represents a different minute, allowing a single character to express 24 hours comprehensively.
 ## Download
 - [TrueType Font (.ttf)](fonts/watch.ttf)
 - [Embedded OpenType (.eot)](fonts/watch.eot)
 - [Web Open Font Format (.wof)](fonts/watch.woff)
 
 ## Icon Table
-The font corresponding to each time is converted to hexadecimal minutes elapsed since 0:00 (or 12:00) and assigned to ``&#xe000;``-``&#xe2cf;`` in the Private Use Area of Unicode
+The icons in the font, representing each minute, are converted to hexadecimal to denote the minutes passed since 0:00 (or 12:00). These are then assigned to Unicode's Private Use Area, ranging from ``&#xe000;`` to ``&#xe2cf;``.
 
 | Time | min → hex | Unicode | HTML Entity | Icon |
 | --- | --- | --- | --- | --- |
