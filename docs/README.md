@@ -25,7 +25,7 @@
     -moz-osx-font-smoothing: grayscale;
   }
   </style>
-# <span class="watch">&#xe262;</span> Watch (font)
+# <span class="now-watch" id="title-watch">&#xe262;</span> Watch (font)
 ## Download
 - [TrueType Font (.ttf)](fonts/watch.ttf)
 - [Embedded OpenType (.eot)](fonts/watch.eot)
@@ -48,8 +48,8 @@
       checkElement.innerHTML = `h:${h}, m:${m}
       = ${min}min (minutes elapsed from 00:00 or 12:00)
       = hex: ${hex} (Converted to hexadecimal)
-      = ${sampleUnicode} (Formed as Unicode)
-      = html exsample : <span class="watch">${unicode}</div>`
+      = unicode: ${sampleUnicode} (Formed as Unicode)
+      = html exsample : <code><span class="watch">${unicode}</span><code>`
       resultElement.innerHTML = unicode
     }
     return
@@ -63,3 +63,17 @@
 
 ## Licence
 <p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><a property="dct:title" rel="cc:attributionURL" href="https://yambal.github.io/watch/">Watch</a> by <a rel="cc:attributionURL dct:creator" property="cc:attributionName" href="https://twitter.com/YamamotoJune">June YAMAMOTO</a> is licensed under <a href="http://creativecommons.org/licenses/by-nd/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">Attribution-NoDerivatives 4.0 International<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nd.svg?ref=chooser-v1"></a></p>
+
+<script>
+  function setNow() {
+    const min = (new Date().getTime()/60000) % 720
+    const hex = ("000" + (min).toString(16)).slice(-3)
+    const unicode = `&#xe${hex};`
+    const elements = document.getElementsByClassName("now-watch")
+    elements.forEach((element) => {
+      element.innerHTML = unicode
+    })
+  }
+
+  setNow()
+</script>
