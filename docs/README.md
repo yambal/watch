@@ -36,6 +36,7 @@
   function onSet() {
     var inputElement = document.getElementById("time")
     var checkElement = document.getElementById("check")
+    var resultElement = document.getElementById("result")
     if(inputElement && checkElement && inputElement.value){
       const [h, m] = inputElement.value.split(":")
       const min = parseInt(h) * 60 + parseInt(m)
@@ -44,6 +45,7 @@
       const unicode = `&#xe${hex};`
 
       checkElement.innerHTML = `h:${h}, m:${m} = ${hex} = ${unicode}`
+      resultElement.innerHTML = unicode
     }
     return
   }
@@ -51,6 +53,7 @@
 <input id="time" type="time">
 <button onclick="onSet()">set</button>
 <div id="check"></div>
+<div id="result" class="watch"></div>
 
 
 ## Licence
