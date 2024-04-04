@@ -38,7 +38,9 @@
     var checkElement = document.getElementById("check")
     if(inputElement && checkElement && inputElement.value){
       const [h, m] = inputElement.value.split(":")
-      checkElement.innerHTML = `h:${h}, m:${m}`
+      const min = parseInt(h) * 60 + parseInt(m)
+      const hex = min.toString(16) 
+      checkElement.innerHTML = `h:${h}, m:${m} = ${hex}`
     }
     return
   }
