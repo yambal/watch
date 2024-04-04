@@ -70,6 +70,7 @@
     const min = (new Date().getTime()/60000) % 720
     const hex = ("000" + (min).toString(16)).slice(-3)
     const unicode = `&#xe${hex};`
+    console.log(unicode)
     const elements = document.getElementsByClassName("now-watch")
     const elementsArr = Array.from( elements )
     elementsArr.forEach((element) => {
