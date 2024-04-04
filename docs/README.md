@@ -26,12 +26,29 @@
   }
   </style>
 # <span class="watch now-watch">&#xe262;</span> Watch (font)
+Analog clock icon font.
+It contains 720 minute icons for 12 hours (720 minutes) from 0:00 to 11:59, and 24 hours can be expressed by a single character.
 ## Download
 - [TrueType Font (.ttf)](fonts/watch.ttf)
 - [Embedded OpenType (.eot)](fonts/watch.eot)
 - [Web Open Font Format (.wof)](fonts/watch.woff)
 
-## Guide
+## Icon Table
+The font corresponding to each time is converted to hexadecimal minutes elapsed since 0:00 (or 12:00) and assigned to ``&#xe000;`` to ``&#xe2cf;`` in the Private Use Area of Unicode
+| Time | min → hex | Unicode | HTML Entity | Icon |
+| --- | --- | --- | --- | --- |
+| 00:00 (12:00) | 0 → 0 | E000 | ``&#xe000;`` | <span class="watch">&#xe000;</span> |
+| 00:01 (12:01) | 1 → 1 | E001| ``&#xe001;`` | <span class="watch">&#xe001;</span> |
+| 00:02 (12:02) | 2 → 2 | E002 | ``&#xe002;`` | <span class="watch">&#xe002;</span> |
+| . | . | . | . | . |
+| 00:59 (12:59) | 59 → 3b | E03N | ``&#xe03b;`` | <span class="watch">&#xe03b;</span> |
+| 01:00 (13:00) | 60 → 3c | E03C | ``&#xe03c;`` | <span class="watch">&#xe03c;</span> |
+| . | . | . | . | . |
+| 10:10 (22:10) | 610 → 262 | E262 | ``&#xe262;`` | <span class="watch">&#xe262;</span> |
+| . | . | . | . | . |
+| 11:59 (23:59) | 719 → 2cf | E2CF | ``&#xe2cf;`` | <span class="watch">&#xe2cf;</span> |
+
+## Try
 
 <input id="time" type="time" value="10:10">
 <button onclick="onSet()">set</button>
@@ -76,6 +93,7 @@
     })
   }
 
+  onSet()
   setNow()
   
   setInterval(setNow, 30000);
