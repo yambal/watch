@@ -29,7 +29,20 @@
 ## Download
 - [TrueType Font (.ttf)](fonts/watch.ttf)
 - [Embedded OpenType (.eot)](fonts/watch.eot)
-- [Web Open Font Format](fonts/watch.woff)
+- [Web Open Font Format (.wof)](fonts/watch.woff)
+
+# 
+<script>
+  function onSet() {
+    var inputElement = document.getElementById("time")
+    var checkElement = document.getElementById("check")
+    checkElement.innerHTML = inputElement.value;
+    return
+  }
+</script>
+<input id="time" type="time">
+<button onclick="onSet()">set</button>
+<div id="check"></div>
 
 
 ## Licence
