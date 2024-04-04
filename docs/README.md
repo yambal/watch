@@ -36,7 +36,10 @@
   function onSet() {
     var inputElement = document.getElementById("time")
     var checkElement = document.getElementById("check")
-    checkElement.innerHTML = typeof inputElement.value;
+    if(inputElement && checkElement && inputElement.value){
+      const [h, m] = inputElement.value.split(":")
+      checkElement.innerHTML = `h:${}, m:${m}`
+    }
     return
   }
 </script>
