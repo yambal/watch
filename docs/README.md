@@ -33,7 +33,7 @@
 
 ## Guide
 
-<input id="time" type="time" default="10:10">
+<input id="time" type="time" value="10:10">
 <button onclick="onSet()">set</button>
 <pre id="check"></pre>
 
@@ -67,10 +67,8 @@
     const nowH = now.getHours()
     const nowM = now.getMinutes()
     const min = (nowH * 60 + nowM) % 720
-    console.log("min", min)
     const hex = ("000" + (min).toString(16)).slice(-3)
     const unicode = `&#xe${hex};`
-    console.log("unicode", unicode)
     const elements = document.getElementsByClassName("now-watch")
     const elementsArr = Array.from( elements )
     elementsArr.forEach((element) => {
