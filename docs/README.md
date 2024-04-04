@@ -42,12 +42,13 @@
       const min = (parseInt(h) * 60 + parseInt(m)) % 720
       const hex = ("000" + (min).toString(16)).slice(-3)
 
+      const sampleUnicode = `&amp;#xe${hex};`
       const unicode = `&#xe${hex};`
 
       checkElement.innerHTML = `h:${h}, m:${m}
       = ${min}min (minutes elapsed from 00:00 or 12:00)
       = hex: ${hex} (Converted to hexadecimal)
-      = ${unicode} (Formed as Unicode)
+      = ${sampleUnicode} (Formed as Unicode)
       = html exsample : <span class="watch">${unicode}</div>`
       resultElement.innerHTML = unicode
     }
